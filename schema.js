@@ -35,7 +35,7 @@ const userSchema = new Schema({
     },
     lastLogin: {
       type: Date,
-      default: null,
+      default: new Date.now(),
     },
   }, {
     timestamps: true,
